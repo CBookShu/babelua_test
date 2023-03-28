@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lua5.3.6">
+      <UniqueIdentifier>{7594EFD5-BEDD-4A78-BB48-50DD4F4912C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lua5.3.6\lapi.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lauxlib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lbaselib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lbitlib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lcode.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lcorolib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lctype.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldblib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldebug.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldo.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldump.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lfunc.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lgc.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\linit.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\liolib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\llex.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lmathlib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lmem.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\loadlib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lobject.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lopcodes.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\loslib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lparser.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstate.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstring.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstrlib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltable.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltablib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltests.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltm.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lundump.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lutf8lib.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lvm.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lzio.c">
+      <Filter>lua5.3.6</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

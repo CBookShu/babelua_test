@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7594EFD5-BEDD-4A78-BB48-50DD4F4912C4}</ProjectGuid>
+    <RootNamespace>lua5.3.6</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <OutDir>..\..\build\windows\x64\debug\</OutDir>
+    <IntDir>..\..\build\.objs\lua5.3.6\windows\x64\debug\</IntDir>
+    <TargetName>lua5.3.6</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <OutDir>..\..\build\windows\x64\release\</OutDir>
+    <IntDir>..\..\build\.objs\lua5.3.6\windows\x64\release\</IntDir>
+    <TargetName>lua5.3.6</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Debugger">
+    <LocalDebuggerWorkingDirectory>..\..\build\windows\x64\debug</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=;$([System.Environment]::GetEnvironmentVariable('PATH'));%(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Debugger">
+    <LocalDebuggerWorkingDirectory>..\..\build\windows\x64\release</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=;$([System.Environment]::GetEnvironmentVariable('PATH'));%(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
+      <PreprocessorDefinitions>__config_debug__;__config_x64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+      <AdditionalOptions>-FS /EHsc %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__config_debug__;__config_x64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Lib>
+      <AdditionalOptions>/opt:ref /opt:icf %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
+      <PreprocessorDefinitions>NDEBUG;__config_release__;__config_x64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;__config_release__;__config_x64__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\lua5.3.6\lapi.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lauxlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lbaselib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lbitlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lcode.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lcorolib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lctype.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldblib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldebug.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldo.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ldump.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lfunc.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lgc.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\linit.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\liolib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\llex.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lmathlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lmem.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\loadlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lobject.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lopcodes.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\loslib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lparser.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstate.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstring.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lstrlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltable.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltablib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltests.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\ltm.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lundump.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lutf8lib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lvm.c">
+    </ClCompile>
+    <ClCompile Include="..\..\lua5.3.6\lzio.c">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
