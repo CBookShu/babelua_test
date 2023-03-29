@@ -10,7 +10,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_mod_babelua", "test_mo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua5.3.6", "lua5.3.6\lua5.3.6.vcxproj", "{7594EFD5-BEDD-4A78-BB48-50DD4F4912C4}"
 EndProject
-Project("{5697748A-77EF-44CA-8824-4F5637E5945B}") = "debug", "..\build\windows\x64\debug.luaproj", "{E439935D-B2A2-46AE-856D-2AA408428F33}"
+Project("{5697748A-77EF-44CA-8824-4F5637E5945B}") = "debug", "..\build\windows\x64\debug\debug.luaproj", "{E439935D-B2A2-46AE-856D-2AA408428F33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
