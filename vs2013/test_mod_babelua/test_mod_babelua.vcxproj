@@ -76,7 +76,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\lua5.3.6</AdditionalIncludeDirectories>
       <AdditionalOptions>-FS /EHsc %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
@@ -104,7 +104,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>I:\github\test_mod_babelua\lua5.3.6</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\lua5.3.6</AdditionalIncludeDirectories>
       <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
